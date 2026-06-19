@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 설정"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="아이디"/>
+
+        <EditText
+            android:id="@+id/edtPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"/>
+
+        <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="나이"
+            android:inputType="number"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남자"/>
+
+            <RadioButton
+                android:id="@+id/rbF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="키(cm)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edtW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="몸무게(kg)"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="저장"/>
+
+    </LinearLayout>
+
+</ScrollView>
